@@ -2,9 +2,10 @@ Descrição do Projeto Final.
 Crie uma API REST usando o Java Spring.  
 Requisitos do projeto: 
 * Usar Java Spring
-*Ter ao menos 5 entidades 
+* Ter ao menos 5 entidades 
 * Criar Controller, Repository, Model, Serice e DTO para todas as models  
 * Criar uma documentação para a API
+
   
 Informações do projeto----
 
