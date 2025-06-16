@@ -10,7 +10,8 @@ Requisitos do projeto:
 Informações do projeto----
 
 A ideia foi criar uma API simulando o backend de um sistema para uma ONG de resgate e adoção de animais. O objetivo é permitir o cadastro e mantimento de informações de animais, voluntários e adotantes, assim como o cadastro de eventos 
-(adoção, vacinação, castração) com data, endereço e etc - Entidades (Models) 
+(adoção, vacinação, castração) com data, endereço e etc
+---Entidades (Models) 
 * Animal: id, nome, espécie, raça, idade, porte, sexo, vacinado, castrado, status 
 (disponível, adotado) 
 * Adotante: id, nome, email, telefone, cpf, endereço 
