@@ -38,10 +38,16 @@ public class AdocaoController {
     }
 
     @PatchMapping("/alterar-status/{id}/{novoStatus}")
-    public ResponseEntity alterarStatus(@PathVariable Long id, @PathVariable StatusAdocao novoStatus){
-        adocaoService.alterarStatus(id, novoStatus);
+public ResponseEntity<Void> alterarStatus(@PathVariable Long id, @PathVariable String novoStatus) {
+    try {
+        StatusAdocao status = StatusAdocao.fromValor(novoStatus);
+        adocaoService.alterarStatus(id, status);
         return ResponseEntity.noContent().build();
+    } catch (IllegalArgumentException e) {
+        return ResponseEntity.badRequest().body("Status inválido: " + novoStatus);
     }
+}
+
 
     @DeleteMapping("{id}")
     public ResponseEntity excluir(@PathVariable Long id){
